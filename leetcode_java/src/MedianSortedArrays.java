@@ -1,4 +1,4 @@
-class findMedianSortedArrays {
+class MedianSortedArrays {
   public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
     if(nums1.length>nums2.length){
       int[] temp=nums1;
