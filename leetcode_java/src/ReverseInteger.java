@@ -9,17 +9,16 @@ public class ReverseInteger {
       carry=-1;
       x=-x;
     }
-    StringBuilder sb=new StringBuilder();
-    List<Integer> arr=new ArrayList();
+    List<Integer> arr=new ArrayList<>();
     while(x>0){
       arr.add(x%10);
       x=x/10;
     }
     int n=arr.size();
     long temp=0;
-    for(int i=0;i<n;i++){
-      temp*=10;
-      temp+=arr.get(i);
+    for (Integer anArr : arr) {
+      temp *= 10;
+      temp += anArr;
     }
     if(temp>2147483647||temp<-2147483648)
       return 0;
